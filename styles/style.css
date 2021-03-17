@@ -4,8 +4,6 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,14 +13,52 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .pyramid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 0;
   height: 0;
-  border-bottom: gold solid 400px;
+  border-bottom: #f0ea19 solid 400px;
   border-left: transparent solid 266.66667px;
   border-right: transparent solid 266.66667px;
+}
+
+.eye {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  border-top: black solid 2px;
+  border-bottom: black solid 2px;
+  border-radius: 100%;
+  background-color: white;
+  margin-top: 380px;
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 100%;
 }
 /*# sourceMappingURL=style.css.map */

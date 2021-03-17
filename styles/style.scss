@@ -2,10 +2,11 @@
 // 2. mixins
 // 2.5. centerbody
 // 3. pyramid
-//      a. eye
-//      b. arms
-//      c. legs
-//      d. hat
+//      a. hat
+//      b. eye
+//      c. bowTie
+//      d. arms
+//      e. legs
 
 // variables
 $pyramidHeight: 400px;
@@ -23,17 +24,41 @@ $pyramidHeight: 400px;
     padding: 0px;
 }
 body {
+    @include flexCenter();
     width: 100vw;
     height: 100vh;
-    @include flexCenter();
 }
 // pyramid
 
 .pyramid {
+    @include flexCenter();
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: gold solid $pyramidHeight;
+    border-bottom: rgb(240, 234, 25) solid $pyramidHeight;
     border-left: transparent solid $pyramidHeight/1.5;
     border-right: transparent solid $pyramidHeight/1.5;
+
+}
+// hat 
+
+
+// eye
+
+.eye {
+    @include flexCenter();
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: $pyramidHeight - 20px;
+}
+.pupil {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 100%;
 }
