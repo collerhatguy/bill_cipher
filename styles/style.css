@@ -35,6 +35,22 @@ body {
   border-right: transparent solid 266.66667px;
 }
 
+.hat {
+  height: 150px;
+  width: 70px;
+  background-color: black;
+  z-index: 1;
+  margin-bottom: 400px;
+}
+
+.hat::after {
+  width: 100px;
+  height: 20px;
+  background-color: black;
+  margin-top: 150px;
+  z-index: 2;
+}
+
 .eye {
   display: -webkit-box;
   display: -ms-flexbox;
