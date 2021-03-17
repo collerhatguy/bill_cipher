@@ -27,6 +27,9 @@ $pyramidHeight: 400px;
     margin-right: $displacement;
     transform: rotateZ($angle);
 }
+@mixin arm($displacement, $angle) {
+    
+}
 // center body
 *, *::after, *::before {
     margin: 0px;
