@@ -165,4 +165,15 @@ body {
   -webkit-transform: rotateZ(8deg);
           transform: rotateZ(8deg);
 }
+
+.bowTie {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: black solid 40px;
+  border-right: black solid 40px;
+  border-top: transparent solid 30px;
+  border-bottom: transparent solid 30px;
+  margin-top: 600px;
+}
 /*# sourceMappingURL=style.css.map */
