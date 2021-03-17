@@ -1,0 +1,33 @@
+// 1. variables
+// 2. mixins
+// 2.5. centerbody
+// 3. pyramid
+//      a. eye
+//      b. arms
+//      c. legs
+//      d. hat
+
+// variables
+$pyramidHeight: 300px;
+
+// mixins
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// center body
+*, *::after, *::before {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+}
+// pyramid
+
+.pyramid {
+
+}
