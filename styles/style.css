@@ -73,8 +73,96 @@ body {
 
 .pupil {
   width: 10px;
-  height: 10px;
+  height: 30px;
   background-color: black;
   border-radius: 100%;
+}
+
+.leanTopLeft {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 60px;
+  margin-right: 70px;
+  -webkit-transform: rotateZ(-23deg);
+          transform: rotateZ(-23deg);
+}
+
+.leanTopRight {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 60px;
+  margin-right: -70px;
+  -webkit-transform: rotateZ(23deg);
+          transform: rotateZ(23deg);
+}
+
+.TopRight {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 70px;
+  margin-right: -28px;
+  -webkit-transform: rotateZ(8deg);
+          transform: rotateZ(8deg);
+}
+
+.TopLeft {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: 70px;
+  margin-right: 28px;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+}
+
+.leanBottomLeft {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: -60px;
+  margin-right: 70px;
+  -webkit-transform: rotateZ(23deg);
+          transform: rotateZ(23deg);
+}
+
+.leanBottomRight {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: -60px;
+  margin-right: -70px;
+  -webkit-transform: rotateZ(-23deg);
+          transform: rotateZ(-23deg);
+}
+
+.BottomRight {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: -70px;
+  margin-right: -28px;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+}
+
+.BottomLeft {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  margin-bottom: -70px;
+  margin-right: 28px;
+  -webkit-transform: rotateZ(8deg);
+          transform: rotateZ(8deg);
 }
 /*# sourceMappingURL=style.css.map */

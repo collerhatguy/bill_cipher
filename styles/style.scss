@@ -18,6 +18,15 @@ $pyramidHeight: 400px;
     justify-content: center;
     align-items: center;
 }
+@mixin eyelash($marginBottom, $displacement, $angle) {
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin-bottom: $marginBottom;
+    margin-right: $displacement;
+    transform: rotateZ($angle);
+}
 // center body
 *, *::after, *::before {
     margin: 0px;
@@ -38,7 +47,6 @@ body {
     border-bottom: rgb(240, 234, 25) solid $pyramidHeight;
     border-left: transparent solid $pyramidHeight/1.5;
     border-right: transparent solid $pyramidHeight/1.5;
-
 }
 // hat 
 
@@ -72,7 +80,34 @@ body {
 }
 .pupil {
     width: 10px;
-    height: 10px;
+    height: 30px;
     background-color: black;
     border-radius: 100%;
 }
+.leanTopLeft {
+    @include eyelash(60px, 70px, -23deg);
+}
+.leanTopRight {
+    @include eyelash(60px, -70px, 23deg);
+}
+.TopRight {
+    @include eyelash(70px, -28px, 8deg);
+}
+.TopLeft {
+    @include eyelash(70px, 28px, -8deg);
+}
+.leanBottomLeft {
+    @include eyelash(-60px, 70px, 23deg);
+}
+.leanBottomRight {
+    @include eyelash(-60px, -70px, -23deg);
+}
+.BottomRight {
+    @include eyelash(-70px, -28px, -8deg);
+}
+.BottomLeft {
+    @include eyelash(-70px, 28px, 8deg);
+}
+
+// bowTie
+
