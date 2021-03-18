@@ -28,7 +28,17 @@ $pyramidHeight: 400px;
     transform: rotateZ($angle);
 }
 @mixin arm($displacement, $angle) {
-    
+    position: absolute;
+    width: 200px;
+    height: 20px;
+    background-color: black;
+    margin-top: $pyramidHeight;
+    margin-right: $displacement;
+    &::after {
+        width: 20px;
+        height: 5px;
+        margin-right: 200px;
+    }
 }
 // center body
 *, *::after, *::before {
@@ -123,4 +133,8 @@ body {
     border-top: transparent solid 30px;
     border-bottom: transparent solid 30px;
     margin-top: $pyramidHeight * 1.5;
+}
+
+.leftArm {
+    @include arm(0px, 0deg);
 }

@@ -176,4 +176,19 @@ body {
   border-bottom: transparent solid 30px;
   margin-top: 600px;
 }
+
+.leftArm {
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  background-color: black;
+  margin-top: 400px;
+  margin-right: 0px;
+}
+
+.leftArm::after {
+  width: 20px;
+  height: 5px;
+  margin-right: 200px;
+}
 /*# sourceMappingURL=style.css.map */
