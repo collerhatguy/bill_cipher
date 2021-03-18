@@ -179,16 +179,43 @@ body {
 
 .leftArm {
   position: absolute;
-  width: 200px;
-  height: 20px;
+  width: 180px;
+  height: 10px;
   background-color: black;
-  margin-top: 400px;
-  margin-right: 0px;
+  -webkit-transform: translate(180px, 200px);
+          transform: translate(180px, 200px);
+  z-index: -1;
 }
 
-.leftArm::after {
-  width: 20px;
-  height: 5px;
-  margin-right: 200px;
+.leftForeArm {
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  background-color: black;
+  margin-left: 75px;
+  bottom: 100px;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.rightArm {
+  position: absolute;
+  width: 180px;
+  height: 10px;
+  background-color: black;
+  -webkit-transform: translate(-180px, 200px);
+          transform: translate(-180px, 200px);
+  z-index: -1;
+}
+
+.rightForeArm {
+  position: absolute;
+  width: 200px;
+  height: 10px;
+  background-color: black;
+  margin-left: -95px;
+  bottom: 100px;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
 }
 /*# sourceMappingURL=style.css.map */

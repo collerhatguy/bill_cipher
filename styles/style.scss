@@ -27,18 +27,22 @@ $pyramidHeight: 400px;
     margin-right: $displacement;
     transform: rotateZ($angle);
 }
-@mixin arm($displacement, $angle) {
+@mixin arm($displacement) {
+    position: absolute;
+    width: 180px;
+    height: 10px;
+    background-color: black;
+    transform: translate($displacement, $pyramidHeight / 2);
+    z-index: -1;
+}
+@mixin foreArm($displacement) {
     position: absolute;
     width: 200px;
-    height: 20px;
+    height: 10px;
     background-color: black;
-    margin-top: $pyramidHeight;
-    margin-right: $displacement;
-    &::after {
-        width: 20px;
-        height: 5px;
-        margin-right: 200px;
-    }
+    margin-left: $displacement / 2 - 10px;
+    bottom: 100px;
+    transform: rotateZ(-90deg);
 }
 // center body
 *, *::after, *::before {
@@ -136,5 +140,14 @@ body {
 }
 
 .leftArm {
-    @include arm(0px, 0deg);
+    @include arm(180px);
+}
+.leftForeArm {
+    @include foreArm(170px);
+}
+.rightArm {
+    @include arm(-180px);
+}
+.rightForeArm {
+    @include foreArm(-170px);
 }
