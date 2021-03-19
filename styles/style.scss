@@ -12,44 +12,7 @@
 $pyramidHeight: 400px;
 
 // mixins
-
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-@mixin eyelash($marginBottom, $displacement, $angle) {
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    background-color: black;
-    margin-bottom: $marginBottom;
-    margin-right: $displacement;
-    transform: rotateZ($angle);
-}
-@mixin arm($displacement) {
-    position: absolute;
-    width: 180px;
-    height: 10px;
-    background-color: black;
-    transform: translate($displacement, $pyramidHeight / 2);
-    z-index: -1;
-}
-@mixin foreArm($displacement) {
-    position: absolute;
-    width: 10px;
-    height: 200px;
-    background-color: black;
-    transform: translate($displacement, -200px);
-}
-@mixin leg($displacement) {
-    position: absolute;
-    width: 10px;
-    height: 80px;
-    background-color: black;
-    transform: translate($displacement, $pyramidHeight +40);
-    z-index: -1;
-}
+@import "./mixin";
 // center body
 *, *::after, *::before {
     margin: 0px;
@@ -89,47 +52,7 @@ body {
 }
 
 // eye
-.eye {
-    @include flexCenter();
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    border-top: black solid 2px;
-    border-bottom: black solid 2px;
-    border-radius: 100%;
-    background-color: white;
-    margin-top: $pyramidHeight - 20px;
-}
-.pupil {
-    width: 10px;
-    height: 30px;
-    background-color: black;
-    border-radius: 100%;
-}
-.leanTopLeft {
-    @include eyelash(60px, 70px, -23deg);
-}
-.leanTopRight {
-    @include eyelash(60px, -70px, 23deg);
-}
-.TopRight {
-    @include eyelash(70px, -28px, 8deg);
-}
-.TopLeft {
-    @include eyelash(70px, 28px, -8deg);
-}
-.leanBottomLeft {
-    @include eyelash(-60px, 70px, 23deg);
-}
-.leanBottomRight {
-    @include eyelash(-60px, -70px, -23deg);
-}
-.BottomRight {
-    @include eyelash(-70px, -28px, -8deg);
-}
-.BottomLeft {
-    @include eyelash(-70px, 28px, 8deg);
-}
+@import "./eye";
 
 // bowTie
 

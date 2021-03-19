@@ -1,0 +1,38 @@
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin eyelash($marginBottom, $displacement, $angle) {
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: black;
+    margin-bottom: $marginBottom;
+    margin-right: $displacement;
+    transform: rotateZ($angle);
+}
+@mixin arm($displacement) {
+    position: absolute;
+    width: 180px;
+    height: 10px;
+    background-color: black;
+    transform: translate($displacement, $pyramidHeight / 2);
+    z-index: -1;
+}
+@mixin foreArm($displacement) {
+    position: absolute;
+    width: 10px;
+    height: 200px;
+    background-color: black;
+    transform: translate($displacement, -200px);
+}
+@mixin leg($displacement) {
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    background-color: black;
+    transform: translate($displacement, $pyramidHeight +40);
+    z-index: -1;
+}

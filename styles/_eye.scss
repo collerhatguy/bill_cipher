@@ -1,0 +1,41 @@
+.eye {
+    @include flexCenter();
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
+    border-radius: 100%;
+    background-color: white;
+    margin-top: $pyramidHeight - 20px;
+}
+.pupil {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    border-radius: 100%;
+}
+.leanTopLeft {
+    @include eyelash(60px, 70px, -23deg);
+}
+.leanTopRight {
+    @include eyelash(60px, -70px, 23deg);
+}
+.TopRight {
+    @include eyelash(70px, -28px, 8deg);
+}
+.TopLeft {
+    @include eyelash(70px, 28px, -8deg);
+}
+.leanBottomLeft {
+    @include eyelash(-60px, 70px, 23deg);
+}
+.leanBottomRight {
+    @include eyelash(-60px, -70px, -23deg);
+}
+.BottomRight {
+    @include eyelash(-70px, -28px, -8deg);
+}
+.BottomLeft {
+    @include eyelash(-70px, 28px, 8deg);
+}
