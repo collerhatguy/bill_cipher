@@ -191,13 +191,11 @@ body {
 
 .leftForeArm {
   position: absolute;
-  width: 200px;
-  height: 10px;
+  width: 10px;
+  height: 200px;
   background-color: black;
-  margin-left: 75px;
-  bottom: 100px;
-  -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
+  -webkit-transform: translate(170px, -200px);
+          transform: translate(170px, -200px);
 }
 
 .rightArm {
@@ -212,12 +210,30 @@ body {
 
 .rightForeArm {
   position: absolute;
-  width: 200px;
-  height: 10px;
+  width: 10px;
+  height: 200px;
   background-color: black;
-  margin-left: -95px;
-  bottom: 100px;
-  -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
+  -webkit-transform: translate(0px, -200px);
+          transform: translate(0px, -200px);
+}
+
+.leftLeg {
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  background-color: black;
+  -webkit-transform: translate(40px, 440px);
+          transform: translate(40px, 440px);
+  z-index: -1;
+}
+
+.rightLeg {
+  position: absolute;
+  width: 10px;
+  height: 80px;
+  background-color: black;
+  -webkit-transform: translate(-40px, 440px);
+          transform: translate(-40px, 440px);
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
