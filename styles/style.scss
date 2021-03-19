@@ -44,6 +44,12 @@ $pyramidHeight: 400px;
     bottom: 100px;
     transform: rotateZ(-90deg);
 }
+@mixin leg($displacement) {
+    width: 10px;
+    height: 30px;
+    background-color: black;
+    transform: translate($pyramidHeight, $displacement);
+}
 // center body
 *, *::after, *::before {
     margin: 0px;
