@@ -36,18 +36,20 @@ body {
 }
 
 .hat {
-  height: 150px;
+  height: 140px;
   width: 70px;
   background-color: black;
   z-index: 1;
-  margin-bottom: 400px;
+  -webkit-transform: translateY(-250px);
+          transform: translateY(-250px);
 }
 
-.hat::after {
-  width: 100px;
-  height: 20px;
+.hatRim {
+  width: 110px;
+  height: 40px;
   background-color: black;
-  margin-top: 150px;
+  -webkit-transform: translate(-20px, 120px);
+          transform: translate(-20px, 120px);
   z-index: 2;
 }
 
